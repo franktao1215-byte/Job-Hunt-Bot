@@ -7,7 +7,18 @@ KEYWORDS = [
     "Stakeholder Engagement"
 ]
 
-print("Searching for jobs...")
+MY_SKILLS = [
+    "project",
+    "stakeholder",
+    "partnership",
+    "policy",
+    "research",
+    "event",
+    "workshop",
+    "report"
+]
 
-for keyword in KEYWORDS:
-    print(keyword)
+print("My profile:")
+
+for skill in MY_SKILLS:
+    print(skill)
