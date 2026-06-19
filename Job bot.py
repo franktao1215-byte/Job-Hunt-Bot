@@ -1,22 +1,14 @@
-job_description = """
-This role involves project coordination,
-stakeholder engagement,
-report writing
-and partnership development.
+report = """
+Daily Job Report
+
+Project Officer
+Score: 88
+
+Project Coordinator
+Score: 82
 """
 
-score = 0
+with open("job_report.txt", "w") as file:
+    file.write(report)
 
-if "project" in job_description.lower():
-    score += 20
-
-if "stakeholder" in job_description.lower():
-    score += 15
-
-if "partnership" in job_description.lower():
-    score += 15
-
-if "report" in job_description.lower():
-    score += 10
-
-print("Match Score:", score)
+print("Report Created")
