@@ -1,14 +1,12 @@
-report = """
-Daily Job Report
+import requests
 
-Project Officer
-Score: 88
+print("Starting Job Search...")
 
-Project Coordinator
-Score: 82
-"""
+response = requests.get("https://www.civilservicejobs.service.gov.uk")
 
-with open("job_report.txt", "w") as file:
-    file.write(report)
+print("Status Code:", response.status_code)
 
-print("Report Created")
+if response.status_code == 200:
+    print("Website reachable")
+else:
+    print("Website not reachable")
