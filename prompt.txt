@@ -1,0 +1,21 @@
+Search NHS Scotland jobs.
+
+Find:
+
+Project Officer
+Project Coordinator
+PMO
+Partnerships Officer
+
+Only include jobs:
+
+Open
+Not expired
+UK based
+
+Return:
+
+Title
+Organisation
+Deadline
+URL
