@@ -1,7 +1,13 @@
-import requests
+KEYWORDS = [
+    "Project Officer",
+    "Project Coordinator",
+    "Project Support Officer",
+    "PMO",
+    "Partnerships Officer",
+    "Stakeholder Engagement"
+]
 
-url = "https://www.civilservicejobs.service.gov.uk"
+print("Searching for jobs...")
 
-response = requests.get(url)
-
-print(response.status_code)
+for keyword in KEYWORDS:
+    print(keyword)
