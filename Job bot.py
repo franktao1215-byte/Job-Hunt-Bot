@@ -1,24 +1,22 @@
-KEYWORDS = [
-    "Project Officer",
-    "Project Coordinator",
-    "Project Support Officer",
-    "PMO",
-    "Partnerships Officer",
-    "Stakeholder Engagement"
-]
+job_description = """
+This role involves project coordination,
+stakeholder engagement,
+report writing
+and partnership development.
+"""
 
-MY_SKILLS = [
-    "project",
-    "stakeholder",
-    "partnership",
-    "policy",
-    "research",
-    "event",
-    "workshop",
-    "report"
-]
+score = 0
 
-print("My profile:")
+if "project" in job_description.lower():
+    score += 20
 
-for skill in MY_SKILLS:
-    print(skill)
+if "stakeholder" in job_description.lower():
+    score += 15
+
+if "partnership" in job_description.lower():
+    score += 15
+
+if "report" in job_description.lower():
+    score += 10
+
+print("Match Score:", score)
