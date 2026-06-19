@@ -1,13 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
 
-KEYWORDS = [
-    "Project Officer",
-    "Project Coordinator",
-    "PMO",
-    "Partnerships Officer",
-    "Stakeholder Engagement"
-]
+url = "https://www.civilservicejobs.service.gov.uk"
 
-for keyword in KEYWORDS:
-    print(f"\n===== {keyword} =====")
+response = requests.get(url)
+
+print(response.status_code)
